@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>static position</title>
+		<style>
+			section{
+				display:grid;
+				grid-template-areas:
+				'header header header'
+				'main main main'
+				'footer footer footer';
+				grid-gap:10px;
+				margin:0;
+				height:80vh;
+			}
+			#header{grid-area:header;}
+			#main{grid-area:main;}
+			#footer{grid-area:footer}
+			header,main,footer{
+				padding:1.2em;
+				background-color:pink;
+			}
+			header a{
+			padding:20px;
+			margin-left;50px;
+			}
+			a:hover{
+				color:green;
+			}
+			img{
+				padding:20px;
+			}
+			footer{
+				text-align:center;
+				color:green;
+			}
+			#header{
+				position:fixed;
+				top:0;
+				left:0;
+			}
+			#main{
+				position:relative;
+				left:20px;
+			}
+			#main img{
+				position:relative;
+				left:20px;
+			}
+			#footer{
+				position:relative;
+			}
+			p{
+				position:absolute;
+				top:50px;
+				right:20px;
+				border:5px solid red;
+			}
+		</style>
+	</head>
+	<body>
+		<section>
+			<header id="header">
+				<img src="../images/10000coders-logo.png"/>
+				<a href="#" alt="_blank">BOY FASHION</a>
+				<a href="#" alt="_blank">GIRL FASHION</a>
+				<a href="#" alt="_blank">FOOTWEAR</a>
+				<a href="#" alt="_blank">TOYS</a>
+				<a href="#" alt="_blank">FEEDING</a>
+			</header>
+			<main id="main">
+				<img src="../images/flower.jfif"/>
+				<img src="../images/pic.jfif"/>
+			</main>
+			<footer id="footer">
+				<p>all rights are reserved</p>
+			</footer>
+		<section>
+	</body>
+</html>
